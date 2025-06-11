@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Alberto';
+    src: url('Alberto.woff2') format('woff2'),
+        url('Alberto.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BanhMi';
+    src: url('BanhMi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LazyFox';
+    src: url('LazyFox.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
