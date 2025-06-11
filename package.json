@@ -17,7 +17,8 @@
     "@capacitor/camera": "latest",
     "@capacitor/core": "^7.3.0",
     "@capacitor/ios": "^7.3.0",
-    "@capacitor/splash-screen": "latest"
+    "@capacitor/splash-screen": "latest",
+    "swiper": "^11.2.8"
   },
   "devDependencies": {
     "@capacitor/cli": "^7.3.0",

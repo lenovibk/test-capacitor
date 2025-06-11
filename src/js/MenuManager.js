@@ -1,4 +1,4 @@
-class MenuManager {
+export class MenuManager {
     constructor(audioManager, screenManager) {
         this.audioManager = audioManager;
         this.screenManager = screenManager;

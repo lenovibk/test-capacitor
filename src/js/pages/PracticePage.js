@@ -1,4 +1,7 @@
-class PracticePage {
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css'; // nếu bạn muốn style sẵn
+import { topics, mainScreenMenus, MainMenuType } from '../const.js';
+export class PracticePage {
     constructor(index, audioManager, screenManager) {
         this.instance = document.getElementById("executionScreen");
         this.audioManager = audioManager;

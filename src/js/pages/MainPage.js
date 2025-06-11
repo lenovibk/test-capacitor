@@ -1,4 +1,7 @@
-class MainPage {
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css'; // nếu bạn muốn style sẵn
+import { topics, mainScreenMenus, MainMenuType } from '../const.js';
+export class MainPage {
     constructor(index, audioManager, screenManager) {
         this.instance = document.getElementById("mainScreen");
         this.audioManager = audioManager;

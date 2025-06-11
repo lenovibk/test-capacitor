@@ -1,11 +1,11 @@
-const MainMenuType = {
+export const MainMenuType = {
     VOCA: "voca",
     PRACTICE: "practice",
     GAME: "game",
     VIDEO: "video",
     STORY: "story"
 }
-const mainScreenMenus = [
+export const mainScreenMenus = [
     {
         name: MainMenuType.VOCA,
         featureImage: '/img/main-menu/hoc-tap.png',
@@ -33,7 +33,7 @@ const mainScreenMenus = [
     }
 ];
 
-const topics = [
+export const topics = [
     {
         name: 'colors',
         featureImage: 'topic/mau-sac.png',

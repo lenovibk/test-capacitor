@@ -1,4 +1,9 @@
-class ScreenManager {
+import { MainPage } from './pages/MainPage.js';
+import { TopicPage } from './pages/TopicPage.js'; 
+import { PracticePage } from './pages/PracticePage.js';
+import { LearningPage } from './pages/LearningPage.js';
+//             spaceBetween: 10,
+export class ScreenManager {
     constructor(audioManager) {
         this.wrapper = document.getElementById('wrapper');
         this.mainMenu = document.getElementById('mainMenu');

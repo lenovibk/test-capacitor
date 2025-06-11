@@ -1,4 +1,4 @@
-class AudioManager {
+export class AudioManager {
     constructor() {
         this.audioFiles = {};
         this.isSoundPlaying = false;

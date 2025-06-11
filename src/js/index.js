@@ -1,3 +1,6 @@
+import {AudioManager} from './AudioManager.js';
+import {ScreenManager} from './ScreenManager.js';
+import {MenuManager} from './MenuManager.js';
 let topic = {};
 const audioManager = new AudioManager();
 const screenManager = new ScreenManager(audioManager);

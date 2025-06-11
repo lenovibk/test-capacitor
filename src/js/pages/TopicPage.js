@@ -1,4 +1,7 @@
-class TopicPage {
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css'; // nếu bạn muốn style sẵn
+import { topics, mainScreenMenus, MainMenuType } from '../const.js';
+export class TopicPage {
     constructor(index, audioManager, screenManager) {
         this.instance = document.getElementById("topicScreen");
         this.audioManager = audioManager;
