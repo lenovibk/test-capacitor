@@ -10,19 +10,19 @@ class AudioManager {
 
     preloadAudio() {
         // Generate audio files
-        this.audioFiles.bat_dau = new Audio('assets/audio/bat_dau_thoi_nao.mp3');
-        this.audioFiles.nhac_nen = new Audio('assets/audio/nhac-nen-chinh.mp3');
-        this.audioFiles.bat_dau_tim = new Audio('assets/audio/bat_dau_tim.mp3');
-        this.audioFiles.chon_cho_me = new Audio('assets/audio/chon_cho_me.mp3');
-        this.audioFiles.hoc_tiep_nhe = new Audio('assets/audio/hoc_tiep_nhe.mp3');
-        this.audioFiles.dung_roi_khen = new Audio('assets/audio/dung_roi_khen.mp3');
-        this.audioFiles.sai_chon_lai = new Audio('assets/audio/sai_chon_lai.mp3');
-        this.audioFiles.good = new Audio('assets/audio/good.mp3');
-        this.audioFiles.wrong = new Audio('assets/audio/wrong.mp3');
-        this.audioFiles.click = new Audio('assets/audio/pick.mp3');
-        this.audioFiles.nao = new Audio('assets/audio/nao.mp3');
-        this.audioFiles.nhe = new Audio('assets/audio/nhe.mp3');
-        this.audioFiles.logo_effect = new Audio('assets/audio/logo-effect.mp3');
+        this.audioFiles.bat_dau = new Audio('/audio/bat_dau_thoi_nao.mp3');
+        this.audioFiles.nhac_nen = new Audio('/audio/nhac-nen-chinh.mp3');
+        this.audioFiles.bat_dau_tim = new Audio('/audio/bat_dau_tim.mp3');
+        this.audioFiles.chon_cho_me = new Audio('/audio/chon_cho_me.mp3');
+        this.audioFiles.hoc_tiep_nhe = new Audio('/audio/hoc_tiep_nhe.mp3');
+        this.audioFiles.dung_roi_khen = new Audio('/audio/dung_roi_khen.mp3');
+        this.audioFiles.sai_chon_lai = new Audio('/audio/sai_chon_lai.mp3');
+        this.audioFiles.good = new Audio('/audio/good.mp3');
+        this.audioFiles.wrong = new Audio('/audio/wrong.mp3');
+        this.audioFiles.click = new Audio('/audio/pick.mp3');
+        this.audioFiles.nao = new Audio('/audio/nao.mp3');
+        this.audioFiles.nhe = new Audio('/audio/nhe.mp3');
+        this.audioFiles.logo_effect = new Audio('/audio/logo-effect.mp3');
         
         // Preload all audio files
         for (let key in this.audioFiles) {

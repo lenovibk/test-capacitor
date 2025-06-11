@@ -8,27 +8,27 @@ const MainMenuType = {
 const mainScreenMenus = [
     {
         name: MainMenuType.VOCA,
-        featureImage: 'assets/img/main-menu/hoc-tap.png',
+        featureImage: '/img/main-menu/hoc-tap.png',
         description: 'Học bài'
     },
     {
         name: MainMenuType.PRACTICE,
-        featureImage: 'assets/img/main-menu/kiem-tra.png',
+        featureImage: '/img/main-menu/kiem-tra.png',
         description: 'Kiểm tra'
     },
     {
         name: MainMenuType.TRO_CHOI,
-        featureImage: 'assets/img/main-menu/tro-choi.png',
+        featureImage: '/img/main-menu/tro-choi.png',
         description: 'Trò chơi'
     },
     {
         name: MainMenuType.VIDEO,
-        featureImage: 'assets/img/main-menu/xem-video.png',
+        featureImage: '/img/main-menu/xem-video.png',
         description: 'Video'
     },
     {
         name: MainMenuType.STORY,
-        featureImage: 'assets/img/main-menu/ke-truyen.png',
+        featureImage: '/img/main-menu/ke-truyen.png',
         description: 'Kể truyện'
     }
 ];
