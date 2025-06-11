@@ -1,0 +1,10 @@
+{
+  "appId": "com.vietapp.vuihoc",
+  "appName": "vuihoc",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  }
+}
