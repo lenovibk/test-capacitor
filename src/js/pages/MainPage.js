@@ -1,6 +1,8 @@
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css'; // nếu bạn muốn style sẵn
 import { topics, mainScreenMenus, MainMenuType } from '../const.js';
+import stickBackground from '../../assets/imgs/stick-background.png';
+import stick from '../../assets/imgs/stick.png';
 export class MainPage {
     constructor(index, audioManager, screenManager) {
         this.instance = document.getElementById("mainScreen");
@@ -14,14 +16,14 @@ export class MainPage {
         this.instance.innerHTML = '<div class="swiper main-page-item"><div class="screenWrapper swiper-wrapper"></div></div>';
         //lac-lu
         const img2 = document.createElement('img');
-        img2.src = 'assets/img/stick-background.png';
+        img2.src = stickBackground;
         img2.className = "stick stick-background";
         document.body.appendChild(img2);
 
         const div = document.createElement('div');
         div.className = "stick";
         const img = document.createElement('img');
-        img.src = 'assets/img/stick.png';
+        img.src = stick;
         img.className = "lac-lu";
         div.appendChild(img);
         document.body.appendChild(div);

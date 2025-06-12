@@ -1,3 +1,16 @@
+import audio_bat_dau from '../assets/audio/bat_dau_thoi_nao.mp3';
+import audio_nhac_nen from '../assets/audio/nhac-nen-chinh.mp3';
+import audio_bat_dau_tim from '../assets/audio/bat_dau_tim.mp3';
+import audio_chon_cho_me from '../assets/audio/chon_cho_me.mp3';
+import audio_hoc_tiep_nhe from '../assets/audio/hoc_tiep_nhe.mp3';
+import audio_dung_roi_khen from '../assets/audio/dung_roi_khen.mp3';
+import audio_sai_chon_lai from '../assets/audio/sai_chon_lai.mp3';
+import audio_good from '../assets/audio/good.mp3';
+import audio_wrong from '../assets/audio/wrong.mp3';
+import audio_click from '../assets/audio/pick.mp3';
+import audio_nao from '../assets/audio/nao.mp3';
+import audio_nhe from '../assets/audio/nhe.mp3';
+import audio_logo_effect from '../assets/audio/logo-effect.mp3';
 export class AudioManager {
     constructor() {
         this.audioFiles = {};
@@ -10,19 +23,19 @@ export class AudioManager {
 
     preloadAudio() {
         // Generate audio files
-        this.audioFiles.bat_dau = new Audio('/audio/bat_dau_thoi_nao.mp3');
-        this.audioFiles.nhac_nen = new Audio('/audio/nhac-nen-chinh.mp3');
-        this.audioFiles.bat_dau_tim = new Audio('/audio/bat_dau_tim.mp3');
-        this.audioFiles.chon_cho_me = new Audio('/audio/chon_cho_me.mp3');
-        this.audioFiles.hoc_tiep_nhe = new Audio('/audio/hoc_tiep_nhe.mp3');
-        this.audioFiles.dung_roi_khen = new Audio('/audio/dung_roi_khen.mp3');
-        this.audioFiles.sai_chon_lai = new Audio('/audio/sai_chon_lai.mp3');
-        this.audioFiles.good = new Audio('/audio/good.mp3');
-        this.audioFiles.wrong = new Audio('/audio/wrong.mp3');
-        this.audioFiles.click = new Audio('/audio/pick.mp3');
-        this.audioFiles.nao = new Audio('/audio/nao.mp3');
-        this.audioFiles.nhe = new Audio('/audio/nhe.mp3');
-        this.audioFiles.logo_effect = new Audio('/audio/logo-effect.mp3');
+        this.audioFiles.bat_dau = new Audio(audio_bat_dau);
+        this.audioFiles.nhac_nen = new Audio(audio_nhac_nen);
+        this.audioFiles.bat_dau_tim = new Audio(audio_bat_dau_tim);
+        this.audioFiles.chon_cho_me = new Audio(audio_chon_cho_me);
+        this.audioFiles.hoc_tiep_nhe = new Audio(audio_hoc_tiep_nhe);
+        this.audioFiles.dung_roi_khen = new Audio(audio_dung_roi_khen);
+        this.audioFiles.sai_chon_lai = new Audio(audio_sai_chon_lai);
+        this.audioFiles.good = new Audio(audio_good);
+        this.audioFiles.wrong = new Audio(audio_wrong);
+        this.audioFiles.click = new Audio(audio_click);
+        this.audioFiles.nao = new Audio(audio_nao);
+        this.audioFiles.nhe = new Audio(audio_nhe);
+        this.audioFiles.logo_effect = new Audio(audio_logo_effect);
         
         // Preload all audio files
         for (let key in this.audioFiles) {

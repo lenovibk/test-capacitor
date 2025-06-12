@@ -238,7 +238,7 @@ border-radius: 15px;
 }
 
 #btnCloseTopic {
-  background-image: url('../../assets/img/icon/back.png'); /* Path to your background image */
+  background-image: url('../assets/imgs/icon/back.png'); /* Path to your background image */
   background-size: cover; /* Ensures the image covers the button */
   background-repeat: no-repeat; /* Prevents tiling */
   background-position: center; /* Centers the image */
@@ -400,7 +400,7 @@ border-radius: 15px;
     top: 50%;
     left: 50%;
     transform: translateX(-50%);
-    background: url('../../assets/img/logo.png') no-repeat center center;
+    background: url('../assets/imgs/logo.png') no-repeat center center;
     background-size: cover;
   }
   
