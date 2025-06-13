@@ -96,7 +96,7 @@ export class ScreenManager {
 
     async checkOrientation() {
         if (Capacitor.isNativePlatform()) {
-            await ScreenOrientation.lock({ orientation: 'landscape' });
+            //await ScreenOrientation.lock({ orientation: 'landscape' });
         }
     }
 
@@ -112,9 +112,9 @@ export class ScreenManager {
         });
     }
     loading() {
-        //document.getElementsByClassName('pulse-loader')[0].classList.remove('hide');
+        document.getElementsByClassName('pulse-loader')[0].classList.remove('hide');
     }
     unLoading() {
-        //document.getElementsByClassName('pulse-loader')[0].classList.add('hide');
+        document.getElementsByClassName('pulse-loader')[0].classList.add('hide');
     }
 }
