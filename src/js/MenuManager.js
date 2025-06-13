@@ -20,12 +20,12 @@ export class MenuManager {
     }
 
     initEventListeners() {
-        document.getElementById('startButton').addEventListener('click', () => {
-            document.getElementById("play").classList.toggle('goDown');
-            this.audioManager.playBackgroundMusic();
-            //document.getElementById("toggleMusicButton").classList.remove('hide');
-            this.screenManager.goToMainPage();
-        });
+        // document.getElementById('startButton').addEventListener('click', () => {
+        //     document.getElementById("play").classList.toggle('goDown');
+        //     this.audioManager.playBackgroundMusic();
+        //     //document.getElementById("toggleMusicButton").classList.remove('hide');
+        //     this.screenManager.goToMainPage();
+        // });
 
         document.getElementById('btnCloseTopic').addEventListener('click', () => {
             this.screenManager.goBack();

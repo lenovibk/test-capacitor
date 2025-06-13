@@ -77,7 +77,7 @@ export class ScreenManager {
         else{
             document.getElementsByClassName("navbar")[0].classList.add("hide");
         }
-        //typeof(this.currentPage.release) === "function" && this.currentPage.release();
+        typeof(this.currentPage.release) === "function" && this.currentPage.release();
         this.currentPageIndex = index;
         const offset = -index * 100; // Dịch chuyển theo %
         this.wrapper.style.transform = `translateX(${offset}vw)`;
@@ -94,16 +94,12 @@ export class ScreenManager {
         typeof(this.currentPage.update) === "function" && this.currentPage.update();
     }
 
-    checkOrientation() {
-        const overlay = document.getElementById("overlay-alert-landscape");
-        if (window.innerHeight > window.innerWidth) {
-            //overlay.style.display = "flex"; // Show overlay in portrait mode
-            this.isLandscape = false;
-        } else {
-            //overlay.style.display = "none"; // Hide overlay in landscape mode
-            this.isLandscape = true;
+    async checkOrientation() {
+        if (Capacitor.isNativePlatform()) {
+            await ScreenOrientation.lock({ orientation: 'landscape' });
         }
     }
+
 
 
     toggleVisibility(className, hide) {
@@ -116,9 +112,9 @@ export class ScreenManager {
         });
     }
     loading() {
-        document.getElementsByClassName('pulse-loader')[0].classList.remove('hide');
+        //document.getElementsByClassName('pulse-loader')[0].classList.remove('hide');
     }
     unLoading() {
-        document.getElementsByClassName('pulse-loader')[0].classList.add('hide');
+        //document.getElementsByClassName('pulse-loader')[0].classList.add('hide');
     }
 }
