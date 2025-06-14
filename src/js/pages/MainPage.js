@@ -1,5 +1,3 @@
-import Swiper from 'swiper';
-import 'swiper/swiper-bundle.css'; // nếu bạn muốn style sẵn
 import { topics, mainScreenMenus, MainMenuType } from '../const.js';
 import stickBackground from '../../assets/imgs/stick-background.png';
 import stick from '../../assets/imgs/stick.png';
