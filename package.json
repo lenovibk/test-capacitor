@@ -19,6 +19,8 @@
     "@capacitor/ios": "^7.3.0",
     "@capacitor/screen-orientation": "^7.0.1",
     "@capacitor/splash-screen": "latest",
+    "@capacitor/toast": "^7.0.1",
+    "howler": "^2.2.4",
     "swiper": "^11.2.8"
   },
   "devDependencies": {

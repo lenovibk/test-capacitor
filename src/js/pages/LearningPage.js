@@ -1,5 +1,3 @@
-import Swiper from 'swiper';
-import 'swiper/swiper-bundle.css'; // nếu bạn muốn style sẵn
 import { topics, mainScreenMenus, MainMenuType } from '../const.js';
 export class LearningPage {
   constructor(index, audioManager, screenManager) {
@@ -51,7 +49,6 @@ export class LearningPage {
       shape1.className = 'swiper-slide';
       shape1.setAttribute('data-value', items[i].name);
       shape1.addEventListener('click', () => {
-
       });
       screenWrapper.appendChild(shape1);
 
