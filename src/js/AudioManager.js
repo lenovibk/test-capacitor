@@ -28,27 +28,26 @@ export class AudioManager {
 
     preloadAudio() {
         this.audioFiles = {
-            bat_dau: new Howl({ src: [audio_bat_dau] }),
-            nhac_nen: new Howl({ src: [audio_nhac_nen] }),
-            bat_dau_tim: new Howl({ src: [audio_bat_dau_tim] }),
-            chon_cho_me: new Howl({ src: [audio_chon_cho_me] }),
-            hoc_tiep_nhe: new Howl({ src: [audio_hoc_tiep_nhe] }),
-            dung_roi_khen: new Howl({ src: [audio_dung_roi_khen] }),
-            sai_chon_lai: new Howl({ src: [audio_sai_chon_lai] }),
-            good: new Howl({ src: [audio_good] }),
-            wrong: new Howl({ src: [audio_wrong] }),
-            click: new Howl({ src: [audio_click] }),
-            nao: new Howl({ src: [audio_nao] }),
-            nhe: new Howl({ src: [audio_nhe] }),
-            logo_effect: new Howl({ src: [audio_logo_effect] }),
+            bat_dau: new Howl({ src: [audio_bat_dau], html5: true }),
+            nhac_nen: new Howl({ src: [audio_nhac_nen], html5: true }),
+            bat_dau_tim: new Howl({ src: [audio_bat_dau_tim], html5: true }),
+            chon_cho_me: new Howl({ src: [audio_chon_cho_me], html5: true }),
+            hoc_tiep_nhe: new Howl({ src: [audio_hoc_tiep_nhe], html5: true }),
+            dung_roi_khen: new Howl({ src: [audio_dung_roi_khen], html5: true }),
+            sai_chon_lai: new Howl({ src: [audio_sai_chon_lai] , html5: true}),
+            good: new Howl({ src: [audio_good], html5: true }),
+            wrong: new Howl({ src: [audio_wrong] , html5: true}),
+            click: new Howl({ src: [audio_click], html5: true }),
+            nao: new Howl({ src: [audio_nao] , html5: true}),
+            nhe: new Howl({ src: [audio_nhe], html5: true }),
+            logo_effect: new Howl({ src: [audio_logo_effect] , html5: true}),
         };
     }
 
     preloadAudioTopic(topic) {
         topic.items.forEach((item) => {
             const key = `topic_${topic.name}_${item.name}`;
-            this.audioFiles[key] = new Howl({ src: [item.audioFile] });
-            this.showToast(`Preloading audio: ${key}`);
+            this.audioFiles[key] = new Howl({ src: [item.audioFile], html5: true });
         });
     }
 
