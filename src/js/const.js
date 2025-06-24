@@ -6,136 +6,136 @@ import imgXemVideo from '../assets/imgs/main-menu/xem-video.png';
 import imgKeTruyen from '../assets/imgs/main-menu/ke-truyen.png';
 
 // Import for colors
-import imgTopicMauSac from '../assets/topic/mau-sac.png';
-import imgColorRed from '../assets/topic/color/red/red.jpg';
-import audioColorRed from '../assets/topic/color/red/red.mp3';
-import imgColorYellow from '../assets/topic/color/yellow/yellow.jpg';
-import audioColorYellow from '../assets/topic/color/yellow/yellow.mp3';
-import imgColorOrange from '../assets/topic/color/orange/orange.jpg';
-import audioColorOrange from '../assets/topic/color/orange/orange.mp3';
-import imgColorPurple from '../assets/topic/color/purple/purple.jpg';
-import audioColorPurple from '../assets/topic/color/purple/purple.mp3';
-import imgColorGreen from '../assets/topic/color/green/green.jpg';
-import audioColorGreen from '../assets/topic/color/green/green.mp3';
-import imgColorBlue from '../assets/topic/color/blue/blue.jpg';
-import audioColorBlue from '../assets/topic/color/blue/blue.mp3';
-import imgColorPink from '../assets/topic/color/pink/pink.jpg';
-import audioColorPink from '../assets/topic/color/pink/pink.mp3';
-import imgColorBlack from '../assets/topic/color/black/black.jpg';
-import audioColorBlack from '../assets/topic/color/black/black.mp3';
+const imgTopicMauSac = 'https://cdn.vietapp.info/cdn/topic/mau-sac.png';
+const imgColorRed = 'https://cdn.vietapp.info/cdn/topic/color/red/red.jpg';
+const audioColorRed = 'https://cdn.vietapp.info/cdn/topic/color/red/red.mp3';
+const imgColorYellow = 'https://cdn.vietapp.info/cdn/topic/color/yellow/yellow.jpg';
+const audioColorYellow = 'https://cdn.vietapp.info/cdn/topic/color/yellow/yellow.mp3';
+const imgColorOrange = 'https://cdn.vietapp.info/cdn/topic/color/orange/orange.jpg';
+const audioColorOrange = 'https://cdn.vietapp.info/cdn/topic/color/orange/orange.mp3';
+const imgColorPurple = 'https://cdn.vietapp.info/cdn/topic/color/purple/purple.jpg';
+const audioColorPurple = 'https://cdn.vietapp.info/cdn/topic/color/purple/purple.mp3';
+const imgColorGreen = 'https://cdn.vietapp.info/cdn/topic/color/green/green.jpg';
+const audioColorGreen = 'https://cdn.vietapp.info/cdn/topic/color/green/green.mp3';
+const imgColorBlue = 'https://cdn.vietapp.info/cdn/topic/color/blue/blue.jpg';
+const audioColorBlue = 'https://cdn.vietapp.info/cdn/topic/color/blue/blue.mp3';
+const imgColorPink = 'https://cdn.vietapp.info/cdn/topic/color/pink/pink.jpg';
+const audioColorPink = 'https://cdn.vietapp.info/cdn/topic/color/pink/pink.mp3';
+const imgColorBlack = 'https://cdn.vietapp.info/cdn/topic/color/black/black.jpg';
+const audioColorBlack = 'https://cdn.vietapp.info/cdn/topic/color/black/black.mp3';
 
-// Imports for shapes
-import imgTopicHinhDang from '../assets/topic/hinh-dang.png';
-import imgShapeTron from '../assets/topic/shape/tron.jpg';
-import audioShapeTron from '../assets/topic/shape/tron.mp3';
-import imgShapeVuong from '../assets/topic/shape/vuong.jpg';
-import audioShapeVuong from '../assets/topic/shape/vuong.mp3';
-import imgShapeTraiTim from '../assets/topic/shape/traitim.jpg';
-import audioShapeTraiTim from '../assets/topic/shape/traitim.mp3';
-import imgShapeChuNhat from '../assets/topic/shape/chunhat.jpg';
-import audioShapeChuNhat from '../assets/topic/shape/chunhat.mp3';
-import imgShapeOvan from '../assets/topic/shape/ovan.jpg';
-import audioShapeOvan from '../assets/topic/shape/ovan.mp3';
-import imgShapeThoi from '../assets/topic/shape/thoi.jpg';
-import audioShapeThoi from '../assets/topic/shape/thoi.mp3';
-import imgShapeNgoiSao from '../assets/topic/shape/ngoisao.jpg';
-import audioShapeNgoiSao from '../assets/topic/shape/ngoisao.mp3';
-import imgShapeTamGiac from '../assets/topic/shape/tamgiac.jpg';
-import audioShapeTamGiac from '../assets/topic/shape/tamgiac.mp3';
 
-// Imports for letters
-import imgTopicChuCai from '../assets/topic/chu-cai.png';
-import imgLetterA from '../assets/topic/letter/a/a.png';
-import audioLetterA from '../assets/topic/letter/a/a.mp3';
-import imgLetterA_hat from '../assets/topic/letter/ă/ă.png'; // Using _hat for ă
-import audioLetterA_hat from '../assets/topic/letter/ă/ă.mp3';
-import imgLetterA_circ from '../assets/topic/letter/â/â.png'; // Using _circ for â
-import audioLetterA_circ from '../assets/topic/letter/â/â.mp3';
-import imgLetterB from '../assets/topic/letter/b/b.png';
-import audioLetterB from '../assets/topic/letter/b/b.mp3';
-import imgLetterC from '../assets/topic/letter/c/c.png';
-import audioLetterC from '../assets/topic/letter/c/c.mp3';
-import imgLetterD from '../assets/topic/letter/d/d.png';
-import audioLetterD from '../assets/topic/letter/d/d.mp3';
-import imgLetterD_stroke from '../assets/topic/letter/đ/đ.png'; // Using _stroke for đ
-import audioLetterD_stroke from '../assets/topic/letter/đ/đ.mp3';
-import imgLetterE from '../assets/topic/letter/e/e.png';
-import audioLetterE from '../assets/topic/letter/e/e.mp3';
-import imgLetterE_circ from '../assets/topic/letter/ê/ê.png'; // Using _circ for ê
-import audioLetterE_circ from '../assets/topic/letter/ê/ê.mp3';
-import imgLetterG from '../assets/topic/letter/g/g.png';
-import audioLetterG from '../assets/topic/letter/g/g.mp3';
-import imgLetterH from '../assets/topic/letter/h/h.png';
-import audioLetterH from '../assets/topic/letter/h/h.mp3';
-import imgLetterI from '../assets/topic/letter/i/i.png';
-import audioLetterI from '../assets/topic/letter/i/i.mp3';
-import imgLetterK from '../assets/topic/letter/k/k.png';
-import audioLetterK from '../assets/topic/letter/k/k.mp3';
-import imgLetterL from '../assets/topic/letter/l/l.png';
-import audioLetterL from '../assets/topic/letter/l/l.mp3';
-import imgLetterM from '../assets/topic/letter/m/m.png';
-import audioLetterM from '../assets/topic/letter/m/m.mp3';
-import imgLetterN from '../assets/topic/letter/n/n.png';
-import audioLetterN from '../assets/topic/letter/n/n.mp3';
-import imgLetterO from '../assets/topic/letter/o/o.png';
-import audioLetterO from '../assets/topic/letter/o/o.mp3';
-import imgLetterO_circ from '../assets/topic/letter/ô/ô.png'; // Using _circ for ô
-import audioLetterO_circ from '../assets/topic/letter/ô/ô.mp3';
-import imgLetterO_horn from '../assets/topic/letter/ơ/ơ.png'; // Using _horn for ơ
-import audioLetterO_horn from '../assets/topic/letter/ơ/ơ.mp3';
-import imgLetterP from '../assets/topic/letter/p/p.png';
-import audioLetterP from '../assets/topic/letter/p/p.mp3';
-import imgLetterQ from '../assets/topic/letter/q/q.png';
-import audioLetterQ from '../assets/topic/letter/q/q.mp3';
-import imgLetterR from '../assets/topic/letter/r/r.png';
-import audioLetterR from '../assets/topic/letter/r/r.mp3';
-import imgLetterS from '../assets/topic/letter/s/s.png';
-import audioLetterS from '../assets/topic/letter/s/s.mp3';
-import imgLetterT from '../assets/topic/letter/t/t.png';
-import audioLetterT from '../assets/topic/letter/t/t.mp3';
-import imgLetterU from '../assets/topic/letter/u/u.png';
-import audioLetterU from '../assets/topic/letter/u/u.mp3';
-import imgLetterU_horn from '../assets/topic/letter/ư/ư.png'; // Using _horn for ư
-import audioLetterU_horn from '../assets/topic/letter/ư/ư.mp3';
-import imgLetterV from '../assets/topic/letter/v/v.png';
-import audioLetterV from '../assets/topic/letter/v/v.mp3';
-import imgLetterX from '../assets/topic/letter/x/x.png';
-import audioLetterX from '../assets/topic/letter/x/x.mp3';
-import imgLetterY from '../assets/topic/letter/y/y.png';
-import audioLetterY from '../assets/topic/letter/y/y.mp3';
+const imgTopicHinhDang = 'https://cdn.vietapp.info/cdn/topic/hinh-dang.png';
+const imgShapeTron = 'https://cdn.vietapp.info/cdn/topic/shape/tron.jpg';
+const audioShapeTron = 'https://cdn.vietapp.info/cdn/topic/shape/tron.mp3';
+const imgShapeVuong = 'https://cdn.vietapp.info/cdn/topic/shape/vuong.jpg';
+const audioShapeVuong = 'https://cdn.vietapp.info/cdn/topic/shape/vuong.mp3';
+const imgShapeTraiTim = 'https://cdn.vietapp.info/cdn/topic/shape/traitim.jpg';
+const audioShapeTraiTim = 'https://cdn.vietapp.info/cdn/topic/shape/traitim.mp3';
+const imgShapeChuNhat = 'https://cdn.vietapp.info/cdn/topic/shape/chunhat.jpg';
+const audioShapeChuNhat = 'https://cdn.vietapp.info/cdn/topic/shape/chunhat.mp3';
+const imgShapeOvan = 'https://cdn.vietapp.info/cdn/topic/shape/ovan.jpg';
+const audioShapeOvan = 'https://cdn.vietapp.info/cdn/topic/shape/ovan.mp3';
+const imgShapeThoi = 'https://cdn.vietapp.info/cdn/topic/shape/thoi.jpg';
+const audioShapeThoi = 'https://cdn.vietapp.info/cdn/topic/shape/thoi.mp3';
+const imgShapeNgoiSao = 'https://cdn.vietapp.info/cdn/topic/shape/ngoisao.jpg';
+const audioShapeNgoiSao = 'https://cdn.vietapp.info/cdn/topic/shape/ngoisao.mp3';
+const imgShapeTamGiac = 'https://cdn.vietapp.info/cdn/topic/shape/tamgiac.jpg';
+const audioShapeTamGiac = 'https://cdn.vietapp.info/cdn/topic/shape/tamgiac.mp3';
 
-// Imports for numbers
-import imgTopicSoDem from '../assets/topic/so-dem.png';
-import imgNumber0 from '../assets/topic/number/0/0.png';
-import audioNumber0 from '../assets/topic/number/0/0.mp3';
-import imgNumber1 from '../assets/topic/number/1/1.png';
-import audioNumber1 from '../assets/topic/number/1/1.mp3';
-import imgNumber2 from '../assets/topic/number/2/2.png';
-import audioNumber2 from '../assets/topic/number/2/2.mp3';
-import imgNumber3 from '../assets/topic/number/3/3.png';
-import audioNumber3 from '../assets/topic/number/3/3.mp3';
-import imgNumber4 from '../assets/topic/number/4/4.png';
-import audioNumber4 from '../assets/topic/number/4/4.mp3';
-import imgNumber5 from '../assets/topic/number/5/5.png';
-import audioNumber5 from '../assets/topic/number/5/5.mp3';
-import imgNumber6 from '../assets/topic/number/6/6.png';
-import audioNumber6 from '../assets/topic/number/6/6.mp3';
-import imgNumber7 from '../assets/topic/number/7/7.png';
-import audioNumber7 from '../assets/topic/number/7/7.mp3';
-import imgNumber8 from '../assets/topic/number/8/8.png';
-import audioNumber8 from '../assets/topic/number/8/8.mp3';
-import imgNumber9 from '../assets/topic/number/9/9.png';
-import audioNumber9 from '../assets/topic/number/9/9.mp3';
 
-// Imports for empty topics (placeholders for consistency)
-import imgTopicCoThe from '../assets/topic/co-the.png';
-import imgTopicTraiCay from '../assets/topic/trai-cay.png';
-import imgTopicPhuongTien from '../assets/topic/phuong-tien.png';
-import imgTopicTheThao from '../assets/topic/the-thao.png';
-import imgTopicNgheNghiep from '../assets/topic/nghe-nghiep.png';
-import imgTopicDungCu from '../assets/topic/dung-cu.png';
-import imgTopicQuanAo from '../assets/topic/quan-ao.png';
-import imgTopicDongVat from '../assets/topic/dong-vat.png';
+const imgTopicChuCai = 'https://cdn.vietapp.info/cdn/topic/chu-cai.png';
+const imgLetterA = 'https://cdn.vietapp.info/cdn/topic/letter/a/a.png';
+const audioLetterA = 'https://cdn.vietapp.info/cdn/topic/letter/a/a.mp3';
+const imgLetterA_hat = 'https://cdn.vietapp.info/cdn/topic/letter/ă/ă.png'; // Using _hat for ă
+const audioLetterA_hat = 'https://cdn.vietapp.info/cdn/topic/letter/ă/ă.mp3';
+const imgLetterA_circ = 'https://cdn.vietapp.info/cdn/topic/letter/â/â.png'; // Using _circ for â
+const audioLetterA_circ = 'https://cdn.vietapp.info/cdn/topic/letter/â/â.mp3';
+const imgLetterB = 'https://cdn.vietapp.info/cdn/topic/letter/b/b.png';
+const audioLetterB = 'https://cdn.vietapp.info/cdn/topic/letter/b/b.mp3';
+const imgLetterC = 'https://cdn.vietapp.info/cdn/topic/letter/c/c.png';
+const audioLetterC = 'https://cdn.vietapp.info/cdn/topic/letter/c/c.mp3';
+const imgLetterD = 'https://cdn.vietapp.info/cdn/topic/letter/d/d.png';
+const audioLetterD = 'https://cdn.vietapp.info/cdn/topic/letter/d/d.mp3';
+const imgLetterD_stroke = 'https://cdn.vietapp.info/cdn/topic/letter/đ/đ.png'; // Using _stroke for đ
+const audioLetterD_stroke = 'https://cdn.vietapp.info/cdn/topic/letter/đ/đ.mp3';
+const imgLetterE = 'https://cdn.vietapp.info/cdn/topic/letter/e/e.png';
+const audioLetterE = 'https://cdn.vietapp.info/cdn/topic/letter/e/e.mp3';
+const imgLetterE_circ = 'https://cdn.vietapp.info/cdn/topic/letter/ê/ê.png'; // Using _circ for ê
+const audioLetterE_circ = 'https://cdn.vietapp.info/cdn/topic/letter/ê/ê.mp3';
+const imgLetterG = 'https://cdn.vietapp.info/cdn/topic/letter/g/g.png';
+const audioLetterG = 'https://cdn.vietapp.info/cdn/topic/letter/g/g.mp3';
+const imgLetterH = 'https://cdn.vietapp.info/cdn/topic/letter/h/h.png';
+const audioLetterH = 'https://cdn.vietapp.info/cdn/topic/letter/h/h.mp3';
+const imgLetterI = 'https://cdn.vietapp.info/cdn/topic/letter/i/i.png';
+const audioLetterI = 'https://cdn.vietapp.info/cdn/topic/letter/i/i.mp3';
+const imgLetterK = 'https://cdn.vietapp.info/cdn/topic/letter/k/k.png';
+const audioLetterK = 'https://cdn.vietapp.info/cdn/topic/letter/k/k.mp3';
+const imgLetterL = 'https://cdn.vietapp.info/cdn/topic/letter/l/l.png';
+const audioLetterL = 'https://cdn.vietapp.info/cdn/topic/letter/l/l.mp3';
+const imgLetterM = 'https://cdn.vietapp.info/cdn/topic/letter/m/m.png';
+const audioLetterM = 'https://cdn.vietapp.info/cdn/topic/letter/m/m.mp3';
+const imgLetterN = 'https://cdn.vietapp.info/cdn/topic/letter/n/n.png';
+const audioLetterN = 'https://cdn.vietapp.info/cdn/topic/letter/n/n.mp3';
+const imgLetterO = 'https://cdn.vietapp.info/cdn/topic/letter/o/o.png';
+const audioLetterO = 'https://cdn.vietapp.info/cdn/topic/letter/o/o.mp3';
+const imgLetterO_circ = 'https://cdn.vietapp.info/cdn/topic/letter/ô/ô.png'; // Using _circ for ô
+const audioLetterO_circ = 'https://cdn.vietapp.info/cdn/topic/letter/ô/ô.mp3';
+const imgLetterO_horn = 'https://cdn.vietapp.info/cdn/topic/letter/ơ/ơ.png'; // Using _horn for ơ
+const audioLetterO_horn = 'https://cdn.vietapp.info/cdn/topic/letter/ơ/ơ.mp3';
+const imgLetterP = 'https://cdn.vietapp.info/cdn/topic/letter/p/p.png';
+const audioLetterP = 'https://cdn.vietapp.info/cdn/topic/letter/p/p.mp3';
+const imgLetterQ = 'https://cdn.vietapp.info/cdn/topic/letter/q/q.png';
+const audioLetterQ = 'https://cdn.vietapp.info/cdn/topic/letter/q/q.mp3';
+const imgLetterR = 'https://cdn.vietapp.info/cdn/topic/letter/r/r.png';
+const audioLetterR = 'https://cdn.vietapp.info/cdn/topic/letter/r/r.mp3';
+const imgLetterS = 'https://cdn.vietapp.info/cdn/topic/letter/s/s.png';
+const audioLetterS = 'https://cdn.vietapp.info/cdn/topic/letter/s/s.mp3';
+const imgLetterT = 'https://cdn.vietapp.info/cdn/topic/letter/t/t.png';
+const audioLetterT = 'https://cdn.vietapp.info/cdn/topic/letter/t/t.mp3';
+const imgLetterU = 'https://cdn.vietapp.info/cdn/topic/letter/u/u.png';
+const audioLetterU = 'https://cdn.vietapp.info/cdn/topic/letter/u/u.mp3';
+const imgLetterU_horn = 'https://cdn.vietapp.info/cdn/topic/letter/ư/ư.png'; // Using _horn for ư
+const audioLetterU_horn = 'https://cdn.vietapp.info/cdn/topic/letter/ư/ư.mp3';
+const imgLetterV = 'https://cdn.vietapp.info/cdn/topic/letter/v/v.png';
+const audioLetterV = 'https://cdn.vietapp.info/cdn/topic/letter/v/v.mp3';
+const imgLetterX = 'https://cdn.vietapp.info/cdn/topic/letter/x/x.png';
+const audioLetterX = 'https://cdn.vietapp.info/cdn/topic/letter/x/x.mp3';
+const imgLetterY = 'https://cdn.vietapp.info/cdn/topic/letter/y/y.png';
+const audioLetterY = 'https://cdn.vietapp.info/cdn/topic/letter/y/y.mp3';
+
+
+const imgTopicSoDem = 'https://cdn.vietapp.info/cdn/topic/so-dem.png';
+const imgNumber0 = 'https://cdn.vietapp.info/cdn/topic/number/0/0.png';
+const audioNumber0 = 'https://cdn.vietapp.info/cdn/topic/number/0/0.mp3';
+const imgNumber1 = 'https://cdn.vietapp.info/cdn/topic/number/1/1.png';
+const audioNumber1 = 'https://cdn.vietapp.info/cdn/topic/number/1/1.mp3';
+const imgNumber2 = 'https://cdn.vietapp.info/cdn/topic/number/2/2.png';
+const audioNumber2 = 'https://cdn.vietapp.info/cdn/topic/number/2/2.mp3';
+const imgNumber3 = 'https://cdn.vietapp.info/cdn/topic/number/3/3.png';
+const audioNumber3 = 'https://cdn.vietapp.info/cdn/topic/number/3/3.mp3';
+const imgNumber4 = 'https://cdn.vietapp.info/cdn/topic/number/4/4.png';
+const audioNumber4 = 'https://cdn.vietapp.info/cdn/topic/number/4/4.mp3';
+const imgNumber5 = 'https://cdn.vietapp.info/cdn/topic/number/5/5.png';
+const audioNumber5 = 'https://cdn.vietapp.info/cdn/topic/number/5/5.mp3';
+const imgNumber6 = 'https://cdn.vietapp.info/cdn/topic/number/6/6.png';
+const audioNumber6 = 'https://cdn.vietapp.info/cdn/topic/number/6/6.mp3';
+const imgNumber7 = 'https://cdn.vietapp.info/cdn/topic/number/7/7.png';
+const audioNumber7 = 'https://cdn.vietapp.info/cdn/topic/number/7/7.mp3';
+const imgNumber8 = 'https://cdn.vietapp.info/cdn/topic/number/8/8.png';
+const audioNumber8 = 'https://cdn.vietapp.info/cdn/topic/number/8/8.mp3';
+const imgNumber9 = 'https://cdn.vietapp.info/cdn/topic/number/9/9.png';
+const audioNumber9 = 'https://cdn.vietapp.info/cdn/topic/number/9/9.mp3';
+
+
+const imgTopicCoThe = 'https://cdn.vietapp.info/cdn/topic/co-the.png';
+const imgTopicTraiCay = 'https://cdn.vietapp.info/cdn/topic/trai-cay.png';
+const imgTopicPhuongTien = 'https://cdn.vietapp.info/cdn/topic/phuong-tien.png';
+const imgTopicTheThao = 'https://cdn.vietapp.info/cdn/topic/the-thao.png';
+const imgTopicNgheNghiep = 'https://cdn.vietapp.info/cdn/topic/nghe-nghiep.png';
+const imgTopicDungCu = 'https://cdn.vietapp.info/cdn/topic/dung-cu.png';
+const imgTopicQuanAo = 'https://cdn.vietapp.info/cdn/topic/quan-ao.png';
+const imgTopicDongVat = 'https://cdn.vietapp.info/cdn/topic/dong-vat.png';
 
 
 export const MainMenuType = {

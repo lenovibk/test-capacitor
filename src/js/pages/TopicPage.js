@@ -1,4 +1,4 @@
-import { topics, mainScreenMenus, MainMenuType } from '../const.js';
+import { mainScreenMenus, MainMenuType } from '../const.js';
 export class TopicPage {
     constructor(index, audioManager, screenManager) {
         this.instance = document.getElementById("topicScreen");
@@ -17,7 +17,6 @@ export class TopicPage {
         }
         else {
             this.title = mainScreenMenus.find(u => u.name === this.topicType).description;
-            debugger
             this.instance.innerHTML = '<div class="building-content-alert">Chức năng đang được xây dựng <br/> Vui lòng chọn chức năng khác</div>';
         }
     }
@@ -30,28 +29,39 @@ export class TopicPage {
     createShapes() {
         this.screenManager.loading();
         const screenWrapper = this.instance.getElementsByClassName('screenWrapper')[0];
-        const items = topics;
-        for (let i = 0; i < items.length; i++) {
-            const shape = document.createElement('div');
-            const itemContain = document.createElement('div');
-            itemContain.className = "item-container shadow";
-            shape.appendChild(itemContain);
-            const img = itemContain.appendChild(document.createElement('img'));
-            img.src = items[i].featureImage;
+        let items = [];
+        fetch('https://vuihoc.vietapp.info/api/public_topics.php?lang=vi')
+            .then(res => res.json())
+            .then(data => {
+                items = data;
+                for (let i = 0; i < items.length; i++) {
+                    console.log(items[i]);
+                    const shape = document.createElement('div');
+                    const itemContain = document.createElement('div');
+                    itemContain.className = "item-container shadow";
+                    shape.appendChild(itemContain);
+                    const img = itemContain.appendChild(document.createElement('img'));
+                    img.src = items[i].img_feature;
 
-            const divName = itemContain.appendChild(document.createElement('div'));
-            divName.className = "title-text";
-            divName.innerText = items[i].description;
+                    const divName = itemContain.appendChild(document.createElement('div'));
+                    divName.className = "title-text";
+                    divName.innerText = items[i].description;
 
-            shape.className = 'swiper-slide item';
-            shape.setAttribute('data-value', items[i].name);
-            shape.addEventListener('click', () => {
-                this.screenManager.goToExecutePage(items[i].name);
+                    shape.className = 'swiper-slide item';
+                    shape.setAttribute('data-value', items[i].id );
+                    shape.addEventListener('click', () => {
+                        this.screenManager.goToExecutePage(items[i].id);
+                    });
+
+                    screenWrapper.appendChild(shape);
+                    this.update();
+                }
+                this.screenManager.unLoading();
+            })
+            .catch(e => {
+                items = [];
+                this.screenManager.unLoading();
             });
-
-            screenWrapper.appendChild(shape);
-        }
-        this.screenManager.unLoading();
     }
     initSwiper(swiperClass) {
         this.swiper = new Swiper(swiperClass, {

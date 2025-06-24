@@ -44,10 +44,10 @@ export class AudioManager {
         };
     }
 
-    preloadAudioTopic(topic) {
-        topic.items.forEach((item) => {
-            const key = `topic_${topic.name}_${item.name}`;
-            this.audioFiles[key] = new Howl({ src: [item.audioFile], html5: true });
+    preloadAudioTopic(items) {
+        items.forEach((item) => {
+            const key = `topic_${item.id}`;
+            this.audioFiles[key] = new Howl({ src: [item.audio], html5: true });
         });
     }
 

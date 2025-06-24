@@ -1,4 +1,3 @@
-import { topics, mainScreenMenus, MainMenuType } from '../const.js';
 export class PracticePage {
     constructor(index, audioManager, screenManager) {
         this.instance = document.getElementById("executionScreen");
@@ -10,19 +9,26 @@ export class PracticePage {
         this.pageIndex = index;
         this.lastQuestion = [];
         this.forceClose = false;
+        this.items = [];
     }
     
     init() {
         this.forceClose = false;
         this.lastQuestion = [];
-        let items = topics.find(u => u.name === this.topicName).items;
-        if (items.length === 0) {
+fetch('https://vuihoc.vietapp.info/api/public_items.php?lang=vi&topic=' + this.topicName)
+      .then(res => res.json())
+      .then(data => {
+        this.items = data;
+         if (this.items.length === 0) {
             this.instance.innerHTML = '<div class="building-content-alert">Chủ đề đang được xây dựng <br/> Vui lòng chọn chủ đề khác</div>';
         }
         else {
             this.instance.innerHTML = '<div class="screenWrapper container"></div>';
             this.createShapes();
         }
+      })
+      .catch(e => {
+      });
     }
 
     release() {
@@ -33,17 +39,16 @@ export class PracticePage {
 
     createShapes() {
         this.screenManager.loading();
-        this.audioManager.preloadAudioTopic(topics.find(u => u.name === this.topicName));
+        this.audioManager.preloadAudioTopic(this.items);
         this.canChoise = true;
         const screenWrapper = this.instance.getElementsByClassName('screenWrapper')[0];
         screenWrapper.innerHTML = ''; // Clear previous shapes
         screenWrapper.classList.remove('result');
-        let items = topics.find(u => u.name === this.topicName).items;
-        items = items.sort(() => Math.random() - 0.5).slice(0, 8); // Shuffle the colors array
+        this.items = this.items.sort(() => Math.random() - 0.5).slice(0, 8); // Shuffle the colors array
         let targetItem;
         for (let attempt = 0; attempt < 5; attempt++) { //Kiểm tra câu hỏi không trùng trước đó. Lặp tối đa 5 lần
-            const c = Math.floor(Math.random() * items.length);
-            targetItem = items[c].name;
+            const c = Math.floor(Math.random() * this.items.length);
+            targetItem = this.items[c].id;
             if (!this.lastQuestion.includes(targetItem)) {
             break;
             }
@@ -51,14 +56,14 @@ export class PracticePage {
         this.lastQuestion.push(targetItem);
         this.reminderInterval && clearInterval(this.reminderInterval);
         this.reminderInterval = setInterval(() => {
-            this.audioManager.playSoundQueue(['chon_cho_me', `topic_${this.topicName}_${targetItem}`]);
+            this.audioManager.playSoundQueue(['chon_cho_me', `topic_${targetItem}`]);
         }, 15000);
-        for (let i = 0; i < items.length; i++) {
+        for (let i = 0; i < this.items.length; i++) {
             const shape = document.createElement('div');
             const img = shape.appendChild(document.createElement('img'));
-            img.src = items[i].image;
+            img.src = this.items[i].img_feature;
             shape.className = 'item shadow';
-            shape.setAttribute('data-value', items[i].name);
+            shape.setAttribute('data-value', this.items[i].id);
             shape.addEventListener('click', () => {
                 if (!this.canChoise) return;
                 if (shape.getAttribute('data-value') === targetItem) {
@@ -88,6 +93,6 @@ export class PracticePage {
         }
         this.screenManager.unLoading();
         this.audioManager.stopAllSounds();
-        this.audioManager.playSoundQueue(['bat_dau_tim', `topic_${this.topicName}_${targetItem}`]);
+        this.audioManager.playSoundQueue(['bat_dau_tim', `topic_${targetItem}`]);
     }
 }

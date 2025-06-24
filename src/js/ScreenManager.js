@@ -2,7 +2,7 @@ import { MainPage } from './pages/MainPage.js';
 import { TopicPage } from './pages/TopicPage.js'; 
 import { PracticePage } from './pages/PracticePage.js';
 import { LearningPage } from './pages/LearningPage.js';
-import { topics, mainScreenMenus, MainMenuType } from './const.js';
+import { MainMenuType } from './const.js';
 //             spaceBetween: 10,
 export class ScreenManager {
     constructor(audioManager) {
